@@ -7,7 +7,7 @@ docker build -t ex3_3 .
 
 docker login --username <SUSERNAME_DOCKERHUB> --password <PASSWORLD_DOCKERHUB>
 
-docker tag ex3_2 <USERNAME_DOCKERHUB>/ex3_3
+docker tag ex3_3 <USERNAME_DOCKERHUB>/ex3_3
 
 docker push <USERNAME_DOCKERHUB>/ex3_3
 
