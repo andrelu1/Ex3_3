@@ -7,9 +7,9 @@ docker build -t ex3_3 .
 
 echo "$DOCKERHUB_PASSWORD" | docker login --username "$DOCKERHUB_USERNAME" --password-stdin
 
-docker tag ex3_3 "$DOCKERHUB_USERNAME"/ex3_3
+docker tag ex3_3 4ndrelu1s/ex3_3:latest
 
-docker push "$DOCKERHUB_USERNAME"/ex3_3
+docker push 4ndrelu1s/ex3_3:latest
 
 docker rmi ex3_3
 
