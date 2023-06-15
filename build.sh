@@ -5,11 +5,11 @@ cd ex3_3
 
 docker build -t ex3_3 .
 
-docker login --username <SUSERNAME_DOCKERHUB> --password <PASSWORLD_DOCKERHUB>
+echo "$DOCKERHUB_PASSWORD" | docker login --username "$DOCKERHUB_USERNAME" --password-stdin
 
-docker tag ex3_3 <USERNAME_DOCKERHUB>/ex3_3
+docker tag ex3_3 "$DOCKERHUB_USERNAME"/ex3_3
 
-docker push <USERNAME_DOCKERHUB>/ex3_3
+docker push "$DOCKERHUB_USERNAME"/ex3_3
 
 docker rmi ex3_3
 
