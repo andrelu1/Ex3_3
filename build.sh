@@ -1,17 +1,17 @@
 #!/bin/bash
 
-git clone https://github.com/andrelu1/Ex3_2.git ex3_2
-cd ex3_2
+git clone https://github.com/andrelu1/Ex3_3.git ex3_3
+cd ex3_3
 
-docker build -t ex3_2 .
+docker build -t ex3_3 .
 
-docker login --username <SEU_USERNAME_DOCKERHUB> --password <SUA_SENHA_DOCKERHUB>
+docker login --username <SUSERNAME_DOCKERHUB> --password <PASSWORLD_DOCKERHUB>
 
-docker tag ex3_2 <SEU_USERNAME_DOCKERHUB>/ex3_2
+docker tag ex3_2 <USERNAME_DOCKERHUB>/ex3_3
 
-docker push <SEU_USERNAME_DOCKERHUB>/ex3_2
+docker push <USERNAME_DOCKERHUB>/ex3_3
 
-docker rmi ex3_2
+docker rmi ex3_3
 
 cd ..
-rm -rf ex3_2
+rm -rf ex3_3
